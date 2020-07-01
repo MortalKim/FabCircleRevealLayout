@@ -56,6 +56,7 @@ class FabCircleRevealLayout @JvmOverloads constructor(context: Context, attrs: A
 
     init {
         childViews = ArrayList(2)
+        ANIMATION_DURATION = ta.getInt(R.styleable.FabCircleRevealLayout_animationDuration,500)
     }
 
     override fun addView(child: View, index: Int, params: ViewGroup.LayoutParams) {
@@ -291,9 +292,5 @@ class FabCircleRevealLayout @JvmOverloads constructor(context: Context, attrs: A
    fun setAnimationDuration(time:Int){
        ANIMATION_DURATION = time
    }
-
-    fun setFabSize(size:Int){
-        FAB_SIZE = size
-    }
 
 }

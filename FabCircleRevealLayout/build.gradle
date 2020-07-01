@@ -14,7 +14,7 @@ ext {
     siteUrl = 'https://github.com/Jinhaihan/FabCircleRevealLayout'
     gitUrl = 'https://github.com/Jinhaihan/FabCircleRevealLayout.git'
 
-    libraryVersion = '0.0.1'
+    libraryVersion = '0.0.2'
 
     developerId = 'HanKim'
     developerName = 'Jin Haihan'
@@ -32,8 +32,8 @@ android {
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 1
-        versionName "0.0.1"
+        versionCode 2
+        versionName "0.0.2"
     }
     buildTypes {
         release {
@@ -48,6 +48,10 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.google.android.material:material:1.1.0'
     implementation "androidx.core:core-ktx:1.3.0"
+}
+
+tasks.withType(Javadoc).all {
+    enabled = false
 }
 
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'

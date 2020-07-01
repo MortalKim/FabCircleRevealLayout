@@ -103,7 +103,7 @@ Currently, both main and secondary views inside `FABRevealLayout` should have th
 
 ```groovy
 dependencies{
-	implementation 'com.hankim.layout:FabCircleRevealLayout:0.0.1'
+	implementation 'com.hankim.layout:FabCircleRevealLayout:0.0.2'
 }
 ```
 
