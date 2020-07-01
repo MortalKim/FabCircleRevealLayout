@@ -1,5 +1,3 @@
-⚠ This library is no longer maintained ⚠️
-
 # FabCircleRevealLayout 
 <!-- [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-FABRevealLayout-green.svg?style=flat)](https://android-arsenal.com/details/1/2459) -->
 
@@ -39,6 +37,30 @@ A layout to transition between two views using a Floating Action Button as shown
 
     </com.hankim.fabreveallayout.FABRevealLayout>
 ```
+
+## cunstom
+
+in custom mode, you can set Fab position in xml or code:
+
+xml:
+```xml
+<com.hankim.layout.FabCircleRevealLayout
+                android:id="@+id/fab_reveal_layout"
+                android:layout_width="match_parent"
+                android:layout_height="763dp"
+                app:fabMode="custom"
+                app:fabX="520dp"
+                app:fabY="600dp">
+```
+
+code:
+```java
+fab_reveal_layout.setFabPosition(point)
+```
+
+in normal mode, fab position can't change.
+
+
 
 ### Further animation
 
@@ -81,7 +103,7 @@ Currently, both main and secondary views inside `FABRevealLayout` should have th
 
 ```groovy
 dependencies{
-	implementation 'com.truizlop.fabreveallayout:library:1.0.0'
+	implementation 'com.hankim.layout:FabCircleRevealLayout:0.0.1'
 }
 ```
 
