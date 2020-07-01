@@ -13,26 +13,27 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.hankim.layout;
+package com.hankim.layout
 
-import java.util.ArrayList;
-import java.util.List;
+class Point {
+    var x: Float
+    var y: Float
+    var control0X = 0f
+    protected var control0Y = 0f
+    var control1X = 0f
+    protected var control1Y = 0f
 
-public class CurvedAnimator {
-
-    protected List<Point> points = new ArrayList<>();
-
-    public CurvedAnimator(float fromX, float fromY, float toX, float toY){
-        points.add(new Point(fromX, fromY));
-        points.add(new Point(Math.max(fromX, toX)*1.5f,
-                (toY + fromY)/2,
-                (toX + fromX)/2,
-                Math.max(fromY, toY)*2.25f,
-                toX,
-                toY));
+    constructor(control0X: Float, control0Y: Float, control1X: Float, control1Y: Float, x: Float, y: Float) {
+        this.control0X = control0X
+        this.control0Y = control0Y
+        this.control1X = control1X
+        this.control1Y = control1Y
+        this.x = x
+        this.y = y
     }
 
-    public Object[] getPoints() {
-        return points.toArray();
+    constructor(x: Float, y: Float) {
+        this.x = x
+        this.y = y
     }
 }

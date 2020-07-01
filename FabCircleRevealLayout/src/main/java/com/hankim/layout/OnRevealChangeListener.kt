@@ -13,30 +13,30 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.hankim.layout;
+package com.hankim.layout
 
-import android.view.View;
+import android.view.View
 
-public interface OnRevealChangeListener {
+interface OnRevealChangeListener {
     /**
      * Start Change view
      * You can init view on this function
      * @param fabCircleRevealLayout view
      * @param viewPosition first or second view. 0 or 1.
      */
-    void onViewStartChanged(FabCircleRevealLayout fabCircleRevealLayout, int viewPosition);
+    fun onViewStartChanged(fabCircleRevealLayout: FabCircleRevealLayout?, viewPosition: Int)
 
     /**
      * When show first view Animation done, this function will be called
      * @param fabCircleRevealLayout view
      * @param mainView  first view
      */
-    void onMainViewAppeared(FabCircleRevealLayout fabCircleRevealLayout, View mainView);
+    fun onMainViewAppeared(fabCircleRevealLayout: FabCircleRevealLayout?, mainView: View?)
 
     /**
      * When show second view Animation done, this function will be called
      * @param fabCircleRevealLayout view
      * @param secondaryView second view
      */
-    void onSecondaryViewAppeared(FabCircleRevealLayout fabCircleRevealLayout, View secondaryView);
+    fun onSecondaryViewAppeared(fabCircleRevealLayout: FabCircleRevealLayout?, secondaryView: View?)
 }

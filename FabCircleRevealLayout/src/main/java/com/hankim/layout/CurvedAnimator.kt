@@ -13,25 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.hankim.layout;
+package com.hankim.layout
 
-public class Point {
+import java.util.*
 
-    protected float x, y;
-    protected float control0X, control0Y;
-    protected float control1X, control1Y;
-
-    public Point(float control0X, float control0Y, float control1X, float control1Y, float x, float y) {
-        this.control0X = control0X;
-        this.control0Y = control0Y;
-        this.control1X = control1X;
-        this.control1Y = control1Y;
-        this.x = x;
-        this.y = y;
+class CurvedAnimator(fromX: Float, fromY: Float, toX: Float, toY: Float) {
+    protected var points: MutableList<Point> = ArrayList()
+    fun getPoints(): Array<Any> {
+        return points.toTypedArray()
     }
 
-    public Point(float x, float y) {
-        this.x = x;
-        this.y = y;
+    init {
+        points.add(Point(fromX, fromY))
+        points.add(Point(Math.max(fromX, toX) * 1.5f,
+                (toY + fromY) / 2,
+                (toX + fromX) / 2,
+                Math.max(fromY, toY) * 2.25f,
+                toX,
+                toY))
     }
 }
