@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FabCircleRevealLayout.iml" filepath="$PROJECT_DIR$/.idea/modules/FabCircleRevealLayout.iml" group="FabCircleRevealLayout" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="FabCircleRevealLayout/app" />
-      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" group="FabCircleRevealLayout/library" />
+      <module fileurl="file://$PROJECT_DIR$/FabCircleRevealLayout/FabCircleRevealLayout.iml" filepath="$PROJECT_DIR$/FabCircleRevealLayout/FabCircleRevealLayout.iml" group="FabCircleRevealLayoutLibrary/FabCircleRevealLayout" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FabCircleRevealLayoutLibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/FabCircleRevealLayoutLibrary.iml" group="FabCircleRevealLayoutLibrary" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="FabCircleRevealLayoutLibrary/app" />
     </modules>
   </component>
 </project>
