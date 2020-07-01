@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FabCircleRevealLayout">
+        <attr name="fabX" format="dimension"/>
+        <attr name="fabY" format="dimension"/>
+        <attr name="fabMode" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="custom" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>

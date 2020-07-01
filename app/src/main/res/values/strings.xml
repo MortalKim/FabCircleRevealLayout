@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">FabCircleRevealLayout</string>
+    <string name="album_title">This is the first layout</string>
+    <string name="artist_name">Click fab to view</string>
+    <string name="song_title">I Appear Missing</string>
+</resources>

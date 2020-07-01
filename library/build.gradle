@@ -1,0 +1,52 @@
+apply plugin: 'com.android.library'
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'fabcirclereveallayout'
+
+    publishedGroupId = 'com.hankim.layout'
+    libraryName = 'FabCircleRevealLayout'
+    artifact = 'library'
+
+    libraryDescription = 'A layout to transition between two views using a Floating Action Button as shown in many Material Design concepts'
+
+    siteUrl = 'https://github.com/Jinhaihan/FABRevealLayout'
+    gitUrl = 'https://github.com/Jinhaihan/FABRevealLayout.git'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'HanKim'
+    developerName = 'Jin Haihan'
+    developerEmail = 'jinhaihan@outlook.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.google.android.material:material:1.1.0'
+}
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
