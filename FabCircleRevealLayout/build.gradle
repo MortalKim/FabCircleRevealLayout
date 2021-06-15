@@ -14,7 +14,7 @@ ext {
     siteUrl = 'https://github.com/Jinhaihan/FabCircleRevealLayout'
     gitUrl = 'https://github.com/Jinhaihan/FabCircleRevealLayout.git'
 
-    libraryVersion = '0.0.2'
+    libraryVersion = '0.0.3'
 
     developerId = 'HanKim'
     developerName = 'Jin Haihan'
@@ -32,8 +32,8 @@ android {
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 2
-        versionName "0.0.2"
+        versionCode 3
+        versionName "0.0.3"
     }
     buildTypes {
         release {

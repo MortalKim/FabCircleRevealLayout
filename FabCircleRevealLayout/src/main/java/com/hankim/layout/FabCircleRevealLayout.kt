@@ -264,6 +264,10 @@ class FabCircleRevealLayout @JvmOverloads constructor(context: Context, attrs: A
         fab!!.y = point.y
     }
 
+    fun overrideFabListener(onClickListener: OnClickListener){
+        fab?.setOnClickListener(onClickListener)
+    }
+
     private fun notifyListener() {
         if (onRevealChangeListener != null) {
             if (isShowingMainView) {
