@@ -1,6 +1,8 @@
 # FabCircleRevealLayout 
 <!-- [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-FABRevealLayout-green.svg?style=flat)](https://android-arsenal.com/details/1/2459) -->
 
+Thanks for [truizlop's FABRevealLayout](https://github.com/truizlop/FABRevealLayout.git)
+
 A layout to transition between two views using a Floating Action Button as shown in many Material Design concepts
 
 ### Usage

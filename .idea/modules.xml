@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FabCircleRevealLayout/FabCircleRevealLayout.iml" filepath="$PROJECT_DIR$/FabCircleRevealLayout/FabCircleRevealLayout.iml" group="FabCircleRevealLayoutLibrary/FabCircleRevealLayout" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FabCircleRevealLayoutLibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/FabCircleRevealLayoutLibrary.iml" group="FabCircleRevealLayoutLibrary" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="FabCircleRevealLayoutLibrary/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FabCircleRevealLayoutLibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/FabCircleRevealLayoutLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FabCircleRevealLayout/FabCircleRevealLayoutLibrary.FabCircleRevealLayout.iml" filepath="$PROJECT_DIR$/.idea/modules/FabCircleRevealLayout/FabCircleRevealLayoutLibrary.FabCircleRevealLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FabCircleRevealLayoutLibrary.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FabCircleRevealLayoutLibrary.app.iml" />
     </modules>
   </component>
 </project>
